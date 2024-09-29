@@ -1,0 +1,33 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to right, #76b852, #8dc26f);
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 500px;
+  margin: auto;
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.weather-info {
+  margin-top: 20px;
+}
+
+h2 {
+  margin: 10px 0;
+}
+
+p {
+  font-size: 20px;
+}
