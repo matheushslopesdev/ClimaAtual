@@ -49,9 +49,3 @@ async function getDesc(url){
 
 }
 
-
-function getInputs(){
-    
-
-}
-
