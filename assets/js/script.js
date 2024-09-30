@@ -7,7 +7,7 @@ navigator.geolocation.getCurrentPosition(onSucess, onError)
 
 function onSucess(position){
     const {latitude, longitude} = position.coords;
-    const APIkey = '7a48649acff95ba09f86e0180992817a';
+    const APIkey = 'SUA_CHAVE_API';
     const url = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${APIkey}`
     getTemp(url)
     getCidade(url)
@@ -19,12 +19,6 @@ function onError(){
     console.log('Falha')
 }
 
-
-function getClima(lat,lon){
-    const APIkey = '7a48649acff95ba09f86e0180992817a';
-    const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${APIkey}`
-    return url
-}
 
 async function getTemp(url){
     const responde = await fetch(url)
